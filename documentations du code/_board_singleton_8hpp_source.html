@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Space invador:  Fichier source de include/client/BoardSingleton.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Space invador
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_board_singleton_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Amis</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">BoardSingleton.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BOARDSINGLETON</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BOARDSINGLETON</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define NBVIE 3</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_board_singleton.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_board_singleton.html">BoardSingleton</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_board_singleton.html">BoardSingleton</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ~<a class="code" href="class_board_singleton.html">BoardSingleton</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_board_singleton.html">BoardSingleton</a> * <span class="keyword">get</span>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a6ebf87c9f9a20971aadeb374c2f2c11f">kill</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a66534a7839322431aa8c213d8408338f">setNbVie</a>(<span class="keywordtype">int</span> nbVie);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#abf5261226726d41f9c7498546080373d">setTemps</a>(<span class="keywordtype">int</span> seconde);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a4b24ee7cdc66bcbdc028e921c9e22b9a">montrePanneauGauche</a>(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a0c0d4ddfda3a690818bff98c3ad69164">montrePanneauDroit</a>(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a65415652cd50ea9abe32507c00c89008">setCenterText</a>(sf::Text &amp;t);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a4082f418ef21ce800df7e732b1c91d0b">setColor</a>(<span class="keyword">const</span> sf::Color &amp;c);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a4082f418ef21ce800df7e732b1c91d0b">setColor</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#ab0950e2144ef3cd694c2990a746b83b7">setStatePop</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_board_singleton.html#a0d5ed564cee99c7225e9a219c030b399">getIdJoueur</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#aa7f6fc1aed392c672163f86825cca4e5">draw</a>(sf::RenderWindow &amp;w);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_board_singleton.html#a2af4145835a97ffff4cba1f347fc6087">getScore</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_board_singleton.html#a5e6f5f433d555f3a4d8345d893139f69">getStatePop</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="class_board_singleton.html#a8194f653b9f6a4f0e99867890ae57bbc">getPortUDP</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_board_singleton.html#a64fd0ee6a6fef9994052d80d53e55a96">setPortUDP</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> p);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> m_portUDP;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> m_idJoueur;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">int</span> m_nbVie;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">bool</span> m_montrerPanG;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">bool</span> m_montrerPanD;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">int</span> m_statePop;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    sf::Font m_font;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    sf::Texture m_boardTex;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    sf::Texture m_coeurTex;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    sf::Sprite m_boardSprite;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    sf::Sprite m_coeurSprite;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    sf::Text m_textVie;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    sf::Text m_textCentre;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    sf::Text m_textTemps;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_board_singleton.html">BoardSingleton</a> * m_instance;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;};</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_board_singleton_html_a66534a7839322431aa8c213d8408338f"><div class="ttname"><a href="class_board_singleton.html#a66534a7839322431aa8c213d8408338f">BoardSingleton::setNbVie</a></div><div class="ttdeci">void setNbVie(int nbVie)</div><div class="ttdoc">kill </div></div>
+<div class="ttc" id="class_board_singleton_html_a2af4145835a97ffff4cba1f347fc6087"><div class="ttname"><a href="class_board_singleton.html#a2af4145835a97ffff4cba1f347fc6087">BoardSingleton::getScore</a></div><div class="ttdeci">int getScore()</div><div class="ttdoc">getStatePop </div></div>
+<div class="ttc" id="class_board_singleton_html_a65415652cd50ea9abe32507c00c89008"><div class="ttname"><a href="class_board_singleton.html#a65415652cd50ea9abe32507c00c89008">BoardSingleton::setCenterText</a></div><div class="ttdeci">void setCenterText(sf::Text &amp;t)</div><div class="ttdoc">setCenterText </div></div>
+<div class="ttc" id="class_board_singleton_html_ab0950e2144ef3cd694c2990a746b83b7"><div class="ttname"><a href="class_board_singleton.html#ab0950e2144ef3cd694c2990a746b83b7">BoardSingleton::setStatePop</a></div><div class="ttdeci">void setStatePop(int n)</div><div class="ttdoc">setStatePop </div></div>
+<div class="ttc" id="class_board_singleton_html_a64fd0ee6a6fef9994052d80d53e55a96"><div class="ttname"><a href="class_board_singleton.html#a64fd0ee6a6fef9994052d80d53e55a96">BoardSingleton::setPortUDP</a></div><div class="ttdeci">void setPortUDP(unsigned short p)</div><div class="ttdoc">setPortUDP </div></div>
+<div class="ttc" id="class_board_singleton_html"><div class="ttname"><a href="class_board_singleton.html">BoardSingleton</a></div><div class="ttdef"><b>Definition:</b> BoardSingleton.hpp:8</div></div>
+<div class="ttc" id="class_board_singleton_html_abf5261226726d41f9c7498546080373d"><div class="ttname"><a href="class_board_singleton.html#abf5261226726d41f9c7498546080373d">BoardSingleton::setTemps</a></div><div class="ttdeci">void setTemps(int seconde)</div><div class="ttdoc">setTemps </div></div>
+<div class="ttc" id="class_board_singleton_html_a0c0d4ddfda3a690818bff98c3ad69164"><div class="ttname"><a href="class_board_singleton.html#a0c0d4ddfda3a690818bff98c3ad69164">BoardSingleton::montrePanneauDroit</a></div><div class="ttdeci">void montrePanneauDroit(bool b)</div><div class="ttdoc">montrePanneauDroit </div></div>
+<div class="ttc" id="class_board_singleton_html_a4082f418ef21ce800df7e732b1c91d0b"><div class="ttname"><a href="class_board_singleton.html#a4082f418ef21ce800df7e732b1c91d0b">BoardSingleton::setColor</a></div><div class="ttdeci">void setColor(const sf::Color &amp;c)</div><div class="ttdoc">setColor </div></div>
+<div class="ttc" id="class_board_singleton_html_a8194f653b9f6a4f0e99867890ae57bbc"><div class="ttname"><a href="class_board_singleton.html#a8194f653b9f6a4f0e99867890ae57bbc">BoardSingleton::getPortUDP</a></div><div class="ttdeci">unsigned short getPortUDP()</div><div class="ttdoc">getStatePop </div></div>
+<div class="ttc" id="class_board_singleton_html_a0d5ed564cee99c7225e9a219c030b399"><div class="ttname"><a href="class_board_singleton.html#a0d5ed564cee99c7225e9a219c030b399">BoardSingleton::getIdJoueur</a></div><div class="ttdeci">int getIdJoueur()</div><div class="ttdoc">getIdJoueur </div></div>
+<div class="ttc" id="class_board_singleton_html_aa7f6fc1aed392c672163f86825cca4e5"><div class="ttname"><a href="class_board_singleton.html#aa7f6fc1aed392c672163f86825cca4e5">BoardSingleton::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;w)</div><div class="ttdoc">draw </div></div>
+<div class="ttc" id="class_board_singleton_html_a4b24ee7cdc66bcbdc028e921c9e22b9a"><div class="ttname"><a href="class_board_singleton.html#a4b24ee7cdc66bcbdc028e921c9e22b9a">BoardSingleton::montrePanneauGauche</a></div><div class="ttdeci">void montrePanneauGauche(bool b)</div><div class="ttdoc">montrePanneauGauche </div></div>
+<div class="ttc" id="class_board_singleton_html_a5e6f5f433d555f3a4d8345d893139f69"><div class="ttname"><a href="class_board_singleton.html#a5e6f5f433d555f3a4d8345d893139f69">BoardSingleton::getStatePop</a></div><div class="ttdeci">int getStatePop()</div><div class="ttdoc">getStatePop </div></div>
+<div class="ttc" id="class_board_singleton_html_a6ebf87c9f9a20971aadeb374c2f2c11f"><div class="ttname"><a href="class_board_singleton.html#a6ebf87c9f9a20971aadeb374c2f2c11f">BoardSingleton::kill</a></div><div class="ttdeci">static void kill()</div><div class="ttdoc">kill </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_eca4379131abe55f66c454f8d4bf8fd2.html">client</a></li><li class="navelem"><b>BoardSingleton.hpp</b></li>
+    <li class="footer">Généré le Dimanche 23 Mars 2014 17:16:12 pour Space invador par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

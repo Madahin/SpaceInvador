@@ -1,0 +1,27 @@
+var class_ennemi =
+[
+    [ "Ennemi", "class_ennemi.html#a764234ffaf9d831ef41e05ca187bcf4c", null ],
+    [ "~Ennemi", "class_ennemi.html#adf402a9389efe705c604f91d6e74d00e", null ],
+    [ "Ennemi", "class_ennemi.html#ad16beee4a5dbb196e171a06cb8914bc1", null ],
+    [ "Ennemi", "class_ennemi.html#ae8a2ab531b04149665e938702aada0ba", null ],
+    [ "~Ennemi", "class_ennemi.html#adf402a9389efe705c604f91d6e74d00e", null ],
+    [ "bouger", "class_ennemi.html#a7d134421e1fa169063f20005b233c499", null ],
+    [ "getCadence", "class_ennemi.html#ae885516eb16bd3e1472ab34bb1f4216a", null ],
+    [ "getPointCadence", "class_ennemi.html#a823cdb3e2c2d9ac1a6d052f6c816500f", null ],
+    [ "getVie", "class_ennemi.html#a6e32b7f25ad2abd0fb4fde69f88317f1", null ],
+    [ "getVitesseX", "class_ennemi.html#aee1d62e81ea5f91eaaac4e0fffb8df08", null ],
+    [ "getVitesseX", "class_ennemi.html#a30e65789e151bdbdf57af2d3c087285f", null ],
+    [ "getVitesseY", "class_ennemi.html#a4bface70d166a5dbf9d150e12cb8a8ec", null ],
+    [ "getVitesseY", "class_ennemi.html#a4bface70d166a5dbf9d150e12cb8a8ec", null ],
+    [ "getXDepart", "class_ennemi.html#a8acf27ec55f585d81893dcad359f417a", null ],
+    [ "getYDepart", "class_ennemi.html#a1b334df7f4643dc837ccff8f30bcccba", null ],
+    [ "setCadence", "class_ennemi.html#ad968a4263e990d28add2c224e2596977", null ],
+    [ "setPointCadence", "class_ennemi.html#aa2d856f49c8d8ddf9781c56895d7aedb", null ],
+    [ "setVie", "class_ennemi.html#a6836106f9b6be888d8a497326ad131a3", null ],
+    [ "setVitesseX", "class_ennemi.html#a6d9e86e9de916e40a650c25b1d1be3ab", null ],
+    [ "setVitesseX", "class_ennemi.html#a66afbff3eaed06f48662a8a717053baa", null ],
+    [ "setVitesseY", "class_ennemi.html#a5338baab5cb175e7cc2c185f58236d0b", null ],
+    [ "setVitesseY", "class_ennemi.html#a0561facd7c170d01a964cf9594ecd358", null ],
+    [ "setXDepart", "class_ennemi.html#a7e8409b659ca93754ab7d9811e9fcc83", null ],
+    [ "setYDepart", "class_ennemi.html#ab3df50f7ce479fd288083698a783f11b", null ]
+];

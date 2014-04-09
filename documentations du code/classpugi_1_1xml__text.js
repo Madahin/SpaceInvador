@@ -1,0 +1,26 @@
+var classpugi_1_1xml__text =
+[
+    [ "xml_text", "classpugi_1_1xml__text.html#ab87979467528efeec9b515a10f1a1df1", null ],
+    [ "as_bool", "classpugi_1_1xml__text.html#ad142b2f1a6971540d9f4bcc2999fa706", null ],
+    [ "as_double", "classpugi_1_1xml__text.html#a3f41cbb69f2ab78aa4b775622a5dc76b", null ],
+    [ "as_float", "classpugi_1_1xml__text.html#a689a32807517a9ca13ae859718b58b14", null ],
+    [ "as_int", "classpugi_1_1xml__text.html#a7b4829ef57648cfd3005e405b0fb6f6b", null ],
+    [ "as_string", "classpugi_1_1xml__text.html#a2a29e257874218b995b66fc72b3dd1ec", null ],
+    [ "as_uint", "classpugi_1_1xml__text.html#a63a210f003b808ce471ae482aafd3173", null ],
+    [ "data", "classpugi_1_1xml__text.html#a6c8fa3239f35fdf067fa077e206df2c1", null ],
+    [ "empty", "classpugi_1_1xml__text.html#abe70bfe877dbfe61413e2097fe7ee755", null ],
+    [ "get", "classpugi_1_1xml__text.html#a62f50d2ad49325ef627f2104c86fe4a3", null ],
+    [ "operator unspecified_bool_type", "classpugi_1_1xml__text.html#a750b19be67ecbeb4e11816407ffd7bb5", null ],
+    [ "operator!", "classpugi_1_1xml__text.html#a4817121b677c3331febc6a8ca7975cb2", null ],
+    [ "operator=", "classpugi_1_1xml__text.html#a7ed74236f116a026fa040b44e95c63d0", null ],
+    [ "operator=", "classpugi_1_1xml__text.html#a08b901ad0f30500d8311719ae99b9323", null ],
+    [ "operator=", "classpugi_1_1xml__text.html#ad9568e181e478c13111da134068fede1", null ],
+    [ "operator=", "classpugi_1_1xml__text.html#a2a6045354b5213ef196d4349b390045b", null ],
+    [ "operator=", "classpugi_1_1xml__text.html#a71107dd80780c912c74de4b941b3a9a4", null ],
+    [ "set", "classpugi_1_1xml__text.html#a7d7433fbbe94f4a4cbb536be7c91b663", null ],
+    [ "set", "classpugi_1_1xml__text.html#ac03c61e9e25322c8bba166c563805e06", null ],
+    [ "set", "classpugi_1_1xml__text.html#a3e2aee57cd70e7cc05c88cd19083024a", null ],
+    [ "set", "classpugi_1_1xml__text.html#a640912bd2f92b8d4efa48aa3e7faf533", null ],
+    [ "set", "classpugi_1_1xml__text.html#ae81ba4805cad0647a2345dfb8cf522df", null ],
+    [ "xml_node", "classpugi_1_1xml__text.html#a156d917a92815c7b593bd5ef19f6d5fb", null ]
+];

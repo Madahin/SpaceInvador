@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Space invador:  Fichier source de include/client/states/StateEnJeu.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Space invador
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_state_en_jeu_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Amis</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">StateEnJeu.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STATEENJEU</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STATEENJEU</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bitset&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SFML/Network.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;include/client/states/State.hpp&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;include/client/joueur.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;include/client/tir.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;include/client/BoardSingleton.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;include/fonctionsUtiles.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;SFML/Network.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;include/pugixml.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define VITJ 5</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_state_en_jeu.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_state_en_jeu.html">StateEnJeu</a> : <span class="keyword">public</span> <a class="code" href="class_state.html">State</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_state_en_jeu.html#a3ca889693a950b93d08d1c0fea46a5ab">StateEnJeu</a>(sf::TcpSocket * socketTCP, sf::UdpSocket * socketUDP);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_state_en_jeu.html#a82f071ea6706776f492e08c2e1f650bf">~StateEnJeu</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a3a45819009a1d421e5b600dc933266d0">liberer</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#aa562df3219c3934503bb2e3c24072662">initialise</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a05760bd0392fa430f3a23b6103acce76">dessiner</a>(sf::RenderWindow &amp;w);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a2af518cd0947ca2c12ff8fa640d53577">controler</a>(<span class="keyword">const</span> sf::Event &amp;e);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a0a5f7d0c8d16fe6ce8027b9fc424913f">mecanique</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a6c5654b1d753a947614e4363bbfee55e">tirer</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a706fd7805f99a01fe567831554f72c54">traitePaquet</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">/* Ajouter si il faut des joueurs dont on recoit des donnees */</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#aeb91870382db0a8bb055df9e0bd0fe19">gerer_udp</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a1b7439529dc22d6837467523f09e2c00">gerer_tcp</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#ac09d6ba89ac19e2fc2f7db3eb19ac64f">traiteCollision</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    sf::Uint16 <a class="code" href="class_state_en_jeu.html#a1a32b9ec8fce5a41272086751e670d26">getPaquetSetX</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    sf::Uint16 <a class="code" href="class_state_en_jeu.html#a935071b3cc6a0fde1aa4f81a8a0d16c4">getPaquetSetY</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    sf::Uint16 <a class="code" href="class_state_en_jeu.html#a51adbf3c3d7648e378548cfc33801889">getPaquetTir</a>(sf::Uint16 <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_state_en_jeu.html#a9eb2b84362f037d8a219cc6359d58103">lireXML_ennemi</a>(<span class="keyword">const</span> std::string &amp;xml);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    sf::Font m_font;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    sf::Text m_textBoard;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    sf::Texture m_textJoueurs;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    sf::Texture m_textTir;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    sf::Texture m_textEnnemie;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    std::vector &lt;Entite*&gt; m_liste_mes_entites;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    std::vector &lt;Entite*&gt; m_liste_autres_entites;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::vector&lt;sf::Uint16&gt; m_listePaquet;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    sf::Thread * m_threadTCP;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    sf::Thread * m_threadUDP;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span> m_gauche;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> m_droit;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">bool</span> m_haut;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">bool</span> m_bas;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">/* Un booleen qui dit &#39;on va tirer&#39; */</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> m_tirer;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">int</span> m_state;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">int</span> m_cadenceTir_ennemis;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> trouverIdTir(std::vector &lt;Entite *&gt; v);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_state_en_jeu_html_a9eb2b84362f037d8a219cc6359d58103"><div class="ttname"><a href="class_state_en_jeu.html#a9eb2b84362f037d8a219cc6359d58103">StateEnJeu::lireXML_ennemi</a></div><div class="ttdeci">void lireXML_ennemi(const std::string &amp;xml)</div><div class="ttdoc">lireXML_ennemi </div></div>
+<div class="ttc" id="class_state_html"><div class="ttname"><a href="class_state.html">State</a></div><div class="ttdef"><b>Definition:</b> State.hpp:12</div></div>
+<div class="ttc" id="class_state_en_jeu_html_a1b7439529dc22d6837467523f09e2c00"><div class="ttname"><a href="class_state_en_jeu.html#a1b7439529dc22d6837467523f09e2c00">StateEnJeu::gerer_tcp</a></div><div class="ttdeci">void gerer_tcp()</div><div class="ttdoc">gerer_tcp </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a6c5654b1d753a947614e4363bbfee55e"><div class="ttname"><a href="class_state_en_jeu.html#a6c5654b1d753a947614e4363bbfee55e">StateEnJeu::tirer</a></div><div class="ttdeci">void tirer()</div><div class="ttdoc">tirer </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a0a5f7d0c8d16fe6ce8027b9fc424913f"><div class="ttname"><a href="class_state_en_jeu.html#a0a5f7d0c8d16fe6ce8027b9fc424913f">StateEnJeu::mecanique</a></div><div class="ttdeci">virtual void mecanique()</div><div class="ttdoc">mecanique </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a935071b3cc6a0fde1aa4f81a8a0d16c4"><div class="ttname"><a href="class_state_en_jeu.html#a935071b3cc6a0fde1aa4f81a8a0d16c4">StateEnJeu::getPaquetSetY</a></div><div class="ttdeci">sf::Uint16 getPaquetSetY()</div><div class="ttdoc">getPaquetSetY </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a3a45819009a1d421e5b600dc933266d0"><div class="ttname"><a href="class_state_en_jeu.html#a3a45819009a1d421e5b600dc933266d0">StateEnJeu::liberer</a></div><div class="ttdeci">virtual void liberer()</div><div class="ttdoc">libere </div></div>
+<div class="ttc" id="class_state_en_jeu_html"><div class="ttname"><a href="class_state_en_jeu.html">StateEnJeu</a></div><div class="ttdef"><b>Definition:</b> StateEnJeu.hpp:23</div></div>
+<div class="ttc" id="class_state_en_jeu_html_a706fd7805f99a01fe567831554f72c54"><div class="ttname"><a href="class_state_en_jeu.html#a706fd7805f99a01fe567831554f72c54">StateEnJeu::traitePaquet</a></div><div class="ttdeci">void traitePaquet()</div><div class="ttdoc">traitePaquet </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a2af518cd0947ca2c12ff8fa640d53577"><div class="ttname"><a href="class_state_en_jeu.html#a2af518cd0947ca2c12ff8fa640d53577">StateEnJeu::controler</a></div><div class="ttdeci">virtual void controler(const sf::Event &amp;e)</div><div class="ttdoc">controler </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a82f071ea6706776f492e08c2e1f650bf"><div class="ttname"><a href="class_state_en_jeu.html#a82f071ea6706776f492e08c2e1f650bf">StateEnJeu::~StateEnJeu</a></div><div class="ttdeci">virtual ~StateEnJeu()</div><div class="ttdoc">~StateEnJeu </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a3ca889693a950b93d08d1c0fea46a5ab"><div class="ttname"><a href="class_state_en_jeu.html#a3ca889693a950b93d08d1c0fea46a5ab">StateEnJeu::StateEnJeu</a></div><div class="ttdeci">StateEnJeu(sf::TcpSocket *socketTCP, sf::UdpSocket *socketUDP)</div><div class="ttdoc">StateEnJeu. </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a05760bd0392fa430f3a23b6103acce76"><div class="ttname"><a href="class_state_en_jeu.html#a05760bd0392fa430f3a23b6103acce76">StateEnJeu::dessiner</a></div><div class="ttdeci">virtual void dessiner(sf::RenderWindow &amp;w)</div><div class="ttdoc">dessiner </div></div>
+<div class="ttc" id="class_state_en_jeu_html_ac09d6ba89ac19e2fc2f7db3eb19ac64f"><div class="ttname"><a href="class_state_en_jeu.html#ac09d6ba89ac19e2fc2f7db3eb19ac64f">StateEnJeu::traiteCollision</a></div><div class="ttdeci">void traiteCollision()</div><div class="ttdoc">traiteCollision </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a51adbf3c3d7648e378548cfc33801889"><div class="ttname"><a href="class_state_en_jeu.html#a51adbf3c3d7648e378548cfc33801889">StateEnJeu::getPaquetTir</a></div><div class="ttdeci">sf::Uint16 getPaquetTir(sf::Uint16 id)</div><div class="ttdoc">getPaquetTir </div></div>
+<div class="ttc" id="class_state_en_jeu_html_aeb91870382db0a8bb055df9e0bd0fe19"><div class="ttname"><a href="class_state_en_jeu.html#aeb91870382db0a8bb055df9e0bd0fe19">StateEnJeu::gerer_udp</a></div><div class="ttdeci">void gerer_udp()</div><div class="ttdoc">gerer_udp </div></div>
+<div class="ttc" id="class_state_en_jeu_html_a1a32b9ec8fce5a41272086751e670d26"><div class="ttname"><a href="class_state_en_jeu.html#a1a32b9ec8fce5a41272086751e670d26">StateEnJeu::getPaquetSetX</a></div><div class="ttdeci">sf::Uint16 getPaquetSetX()</div><div class="ttdoc">getPaquetSetX </div></div>
+<div class="ttc" id="class_state_en_jeu_html_aa562df3219c3934503bb2e3c24072662"><div class="ttname"><a href="class_state_en_jeu.html#aa562df3219c3934503bb2e3c24072662">StateEnJeu::initialise</a></div><div class="ttdeci">virtual void initialise()</div><div class="ttdoc">initialise </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_eca4379131abe55f66c454f8d4bf8fd2.html">client</a></li><li class="navelem"><a class="el" href="dir_45f2ad5b7c2b5623e26f978aba40e8db.html">states</a></li><li class="navelem"><b>StateEnJeu.hpp</b></li>
+    <li class="footer">Généré le Dimanche 23 Mars 2014 17:16:12 pour Space invador par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>
